@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head >
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    head{
+
+    }
+    .table {
+    border-bottom:0;
+    border-top: 0;
+}
+    body, .modal-body{
+      background-color: #dfd4e0;
+    }
+    .jumbotron, .modal-footer, .modal-header{
+    background-color: #d0c6d1;
+    color:black;
+    }
+
+    .center div {
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  position: absolute;
+      }
+
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #d0c6d1;
+      padding: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Marc Good</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="homepage.html">Home</a></li>
+        <li><a href="Skills.html">Skills</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron">
+  <div class="container text-center">
+    <h1>My Resume</h1>
+    <p>I graduated in 2018 from Seton Hall University with a B.S degree in Computer Science. I enjoy programming and am interested in developing all kinds of work in the future.
+    <br>  <a href="mailto:marcgood96@gmail.com">marcgood96@gmail.com</a> </p>
+  </div>
+</div>
+
+<div class="container-fluid bg-3 text-center">
+  <h3>Background</h3><br>
+  <table style= "padding:10px;"class= "table">
+    <tr style="width:40%;padding:10px;">
+      <td style="width:40% ; padding:10px;">  <h4>Seton Hall University</h4></td>
+    <td style="width:40%; padding:10px;">  <h4>United Parcel Service (UPS)</h4></td>
+
+  </tr>
+  <tr style="width:40%;padding:10px;">
+
+    <td style="width:40%; padding:10px;">  <img id="imgSHU" src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e1/Seton_Hall_Pirates_logo.svg/1200px-Seton_Hall_Pirates_logo.svg.png"  style="width:360px ; height :360px" alt="Image" ></td>
+    <td style="width:40%;padding:10px;"> <img  id="imgUPS" src="https://vignette3.wikia.nocookie.net/logopedia/images/0/0e/UPS_logo_2003.png/revision/latest/scale-to-width-down/403?cb=20100615165603"style="width:360px ; height :360px" alt="Image"></td>
+
+  </tr>
+
+  <tr style="width:40%;padding:10px;">
+  <td style="width:40%;padding:10px;">  <h4>Kmart</h4>  </td>
+  <td style="width:40%;padding:10px;">  <h4>Annunciation of the Blessed Virgin Mary</h4>  </td>
+
+</tr>
+<tr style="width:40%;padding:10px;">
+
+  <td style="width:40%;padding:10px;">  <img id="imgKmart" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Kmart_logo_1990s.svg/1280px-Kmart_logo_1990s.svg.png"  style="width:360px ; height :360px" alt="Image" >  </td>
+  <td style="width:40%;padding:10px;">  <img id= "imgABVM"src="http://cdn.onlinewebfonts.com/svg/img_67303.png"style="width:360px ; height :360px" alt="Image">  </td>
+
+</tr>
+</table>
+
+</div><br>
+
+
+<footer class="container-fluid text-center">
+  <p>2018</p><br>
+  <a onclick="backToTop()">Back To Top</a>
+</footer>
+
+<div class="modal fade" id="SetonHallModal" role="dialog">
+<div class="modal-dialog">
+<div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Seton Hall University Experience</h4>
+        </div>
+        <div class="modal-body">
+          <center><img id="image1" src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e1/Seton_Hall_Pirates_logo.svg/1200px-Seton_Hall_Pirates_logo.svg.png"  style="width:360px ; height :360px; padding-left 50px;" alt="Image" ></center>
+<br><br>
+          <p style="text-indent: 40px; ">During my time at Seton Hall University, I had the opportunity to learn functional and object-oriented languages. When studying functional languages, I was able
+          to improve my recursive techniques. I also transferred these skills to the object-oriented languages I used. I also studied databases, where I designed and created my own databases. I also used databases to populate information
+        in a website.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+</div>
+</div>
+</div>
+<div class="modal fade" id="UPSModal" role="dialog">
+<div class="modal-dialog">
+<div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">UPS Experience</h4>
+        </div>
+        <div class="modal-body">
+          <center><img src="https://vignette3.wikia.nocookie.net/logopedia/images/0/0e/UPS_logo_2003.png/revision/latest/scale-to-width-down/403?cb=20100615165603"style="width:360px ; height :360px" alt="Image"></center>
+<br><br>
+          <p style="text-indent: 40px; ">During the summer of 2016 and spring term of 2017, I worked an Application Developer Intern at UPS. I created an internal website called the Application Visiblity System (AVS).
+          This website offered support when a user needs information on an application UPS uses. This utilized their databases that were already set up. To update my fellow team members on my progress, I organized
+        meetings on my progress. Another project I worked on was going through multiple sources to organize them into Microsoft Excel sheets. Towards the end of my internship, I was able to present my work to the Portfolio
+      managers and different supervisors within my Portfolio. </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+</div>
+</div>
+</div>
+<div class="modal fade" id="KmartModal" role="dialog">
+<div class="modal-dialog">
+<div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Kmart Experience</h4>
+        </div>
+        <div class="modal-body">
+          <center><img id="image1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Kmart_logo_1990s.svg/1280px-Kmart_logo_1990s.svg.png"  style="width:360px ; height :360px" alt="Image" > </center>
+<br><br>
+          <p style="text-indent: 40px; "> I started at Kmart as a  Sales Associate, while I was in high school. I was able to interact with a lot of different people
+          I learned and appreciated the work that are often looked over. I soon was promoted to a Inventory Mangagement position. For this role, I was in charge of
+        making sure that all of the pantry products are out on the shelves and in the correct place. I was able to learn a new side of the retail business. </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+</div>
+</div>
+</div>
+<div class="modal fade" id="ABVMModal" role="dialog">
+<div class="modal-dialog">
+<div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">A.B.V.M Experience</h4>
+        </div>
+        <div class="modal-body">
+          <center><img id= "imgABVM"src="http://cdn.onlinewebfonts.com/svg/img_67303.png"style="width:360px ; height :360px" alt="Image"> </center>
+<br><br>
+          <p style="text-indent: 40px; "> I volunteered at Annunciation of the Blessed Virgin Mary church, throughout all four years of high school.
+          I started working as a team member at Antioch, a youth ministry weekend retreat. This consisted of writing a talk and reading it to a group
+        of fellow high school students. In addition to writing the talk, I would also lead a group of about 5 other high school students to speak about the talk
+      they just heard. I later became a team leader. This consisted of leading the 15 team members and making sure everything was going according to schedule. I
+      made decisions on themes, groups, and music for the weekend. During my time, I also had the opportunity to go to Roanoke, Virginia to volunteer with
+    Habitat for Humanity. </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+</div>
+</div>
+</div>
+<br>
+</body>
+
+<script>
+    function backToTop(){
+       document.documentElement.scrollTop = 0;
+    }
+    document.getElementById("imgSHU").onclick = function(){
+        $("#SetonHallModal").modal();
+    }
+
+    document.getElementById("imgUPS").onclick = function(){
+        $("#UPSModal").modal();
+    }
+
+    document.getElementById("imgKmart").onclick = function(){
+        $("#KmartModal").modal();
+    }
+
+    document.getElementById("imgABVM").onclick = function(){
+        $("#ABVMModal").modal();
+    }
+
+
+</script>
+</html>
